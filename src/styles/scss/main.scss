@@ -1,0 +1,39 @@
+@import "vendor/bootstrap/bootstrap";
+
+.hero-img {
+  position: absolute;
+  background-image: url("../images/pc4.jpg");
+  background-size: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  min-height: 35rem;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#737373 31%,#8c4605);
+    opacity: .6;
+  }
+}
+
+.hero-header {
+  text-shadow: 0 0 10px $gray-700;
+
+  & .display-4 {
+    @include media-breakpoint-down(md) {
+      font-size: 3rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 2rem;
+    }
+  }
+
+}

@@ -1,4 +1,6 @@
+@import "utils/theme";
 @import "vendor/bootstrap/bootstrap";
+@import "utils/utils";
 
 .hero-img {
   position: absolute;
@@ -23,6 +25,24 @@
   }
 }
 
+.background-img-2 {
+  position: absolute;
+  background-image: url("../images/pc7.jpg");
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  min-height: 35rem;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(to bottom left,#737373 31%,#8c4605);
+    opacity: .7;
+    width: 100%;
+    min-height: 35rem;
+  }
+}
+
 .hero-header {
   text-shadow: 0 0 10px $gray-700;
 
@@ -36,4 +56,9 @@
     }
   }
 
+}
+
+#map {
+  width: 100%;
+  height: 25rem;
 }

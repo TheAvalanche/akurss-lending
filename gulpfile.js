@@ -10,7 +10,8 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     livereload = require('gulp-livereload'),
     gprint = require('gulp-print'),
-    del = require('del');
+    del = require('del'),
+    fileinclude = require('gulp-file-include');
 
 // Styles
 gulp.task('styles', function () {
@@ -44,6 +45,10 @@ gulp.task('images', function () {
 // HTML
 gulp.task('html', function() {
     return gulp.src('src/**/*.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
         .pipe(gulp.dest('dist/'));
 });
 

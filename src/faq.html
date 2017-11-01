@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     @@include('./partials/header.html')
     <title>AKurss | Вопросы и ответы | Рига</title>
@@ -7,13 +7,169 @@
 <body>
 @@include('./partials/nav.html')
 <div class="container">
-    <div class="row my-3">
+    <div class="row my-4">
         <div class="col-12">
             <h1>Вопросы и ответы</h1>
         </div>
     </div>
     <div class="row my-3">
+        <div class="col-12 col-md-6">
+            <div id="leftFaq" data-children=".item">
+                <div class="item my-2">
+                    <a data-toggle="collapse" data-parent="#leftFaq" href="#leftFaq1" aria-expanded="true"
+                       aria-controls="leftFaq1">
+                        <i class="fa fa-question-circle-o text-secondary mr-2" aria-hidden="true"></i> Сколько длится занятие?
+                    </a>
+                    <div id="leftFaq1" class="collapse mt-2" role="tabpanel">
+                        <p class="mb-3">
+                            Занятие длится 3 часа. <br>
+                            Рассчитывайте, что иногда может быть минут на 15-20 дольше, так как
+                            мы будем стараться ответить на все вопросы, которые будут интересовать вас и ваших коллег.<br>
+                            В любом случае, вы всегда можете уйти раньше, если куда-то спешите.
+                        </p>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <a data-toggle="collapse" data-parent="#leftFaq" href="#leftFaq2" aria-expanded="false"
+                       aria-controls="leftFaq2">
+                        <i class="fa fa-question-circle-o text-secondary mr-2" aria-hidden="true"></i> Как часто проходят занятия и сколько длится курс?
+                    </a>
+                    <div id="leftFaq2" class="collapse mt-2" role="tabpanel">
+                        <p class="mb-3">
+                            Курс состоит из 11 занятий и занятия проходят один раз в неделю.
+                        </p>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <a data-toggle="collapse" data-parent="#leftFaq" href="#leftFaq3" aria-expanded="false"
+                       aria-controls="leftFaq3">
+                        <i class="fa fa-question-circle-o text-secondary mr-2" aria-hidden="true"></i> Сколько стоят занятия и как оплачивать?
+                    </a>
+                    <div id="leftFaq3" class="collapse mt-2" role="tabpanel">
+                        <p class="mb-3">
+                            Первое занятие абсолютно <b>бесплатно</b>!<br>
+                            Именно на нем вы можете определиться, желаете вы продолжать обучение или нет.
+                            Потому полную оплату необходимо произвести только перед вторым занятием.
+                            Полная стоимость курса - 150€ (15€ за занятие).
+                            Оплата производится перечислением на банковский счет.<br><br>
+                            <b>Реквизиты:</b></p>
+                        <dl class="row">
+                            <dt class="col-3">№ счета</dt>
+                            <dd class="col-9">LV06HABA0551043935089</dd>
+                            <dt class="col-3">Получатель</dt>
+                            <dd class="col-9">SIA AKURSS</dd>
+                            <dt class="col-3">Рег. номер</dt>
+                            <dd class="col-9">40203071309</dd>
+                            <dt class="col-3">Комментарий</dt>
+                            <dd class="col-9">{Ваша фамилия}</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <a data-toggle="collapse" data-parent="#leftFaq" href="#leftFaq4" aria-expanded="false"
+                       aria-controls="leftFaq4">
+                        <i class="fa fa-question-circle-o text-secondary mr-2" aria-hidden="true"></i> Нужен ли с собой компьютер и что еще необходимо иметь с собой?
+                    </a>
+                    <div id="leftFaq4" class="collapse mt-2" role="tabpanel">
+                        <p class="mb-3">
+                            Вы можете приносить свой привычный ноутбук и работать на нем, либо можете смело пользоваться
+                            нашими ноутбуками для работы в классе. Выбор за вами! <br>
+                            Также с собой необходимо иметь ручку и
+                            небольшую тетрадь. <br>
+                            В основном, <b>весь материал будет даваться электронно</b>, потому много писать
+                            не придется. Но для каких-то пометок тетрадь пригодится.
+                            Также захватите с собой хорошее настроение, щепотку юмора и пакетик помидоров, если вам не
+                            понравится преподаватель. :)
+                        </p>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <a data-toggle="collapse" data-parent="#rightFaq" href="#rightFaq1"
+                       aria-expanded="true" aria-controls="rightFaq1">
+                        <i class="fa fa-question-circle-o text-secondary mr-2" aria-hidden="true"></i> Что, если я пропущу какое-то занятие?
+                    </a>
+                    <div id="rightFaq1" class="collapse mt-2" role="tabpanel">
+                        <p class="mb-3">
+                            Для начала можно поплакать - ведь вы пропустили целых 3 часа занимательной информации в
+                            приятной и веселой компании! :) <br>
+                            Но не отчаивайтесь, в любом случае вы получите все материалы
+                            и помощь в освоении темы самостоятельно.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div id="rightFaq" data-children=".item">
+                <div class="item my-2">
+                    <a data-toggle="collapse" data-parent="#rightFaq" href="#rightFaq5"
+                       aria-expanded="false" aria-controls="rightFaq5">
+                        <i class="fa fa-question-circle-o text-secondary mr-2" aria-hidden="true"></i> Где вы находитесь и как вас найти?
+                    </a>
+                    <div id="rightFaq5" class="collapse mt-2" role="tabpanel">
+                        <p class="mb-3">
+                            Наш адрес: Maskavas 322, каб. 204. Это напротив Т/Ц "Dole" в Кенгарагсе.<br>
+                            В 50 метрах находится остановка 15, 31, 49 автобусов, в 200 метрах остановка 3, 7, 9
+                            трамваев и в 800 метрах остановка 15 троллейбуса. <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <a data-toggle="collapse" data-parent="#leftFaq" href="#leftFaq5" aria-expanded="false"
+                       aria-controls="leftFaq5">
+                        <i class="fa fa-question-circle-o text-secondary mr-2" aria-hidden="true"></i> Будут ли домашние задания и что необходимо иметь дома для этого?
+                    </a>
+                    <div id="leftFaq5" class="collapse mt-2" role="tabpanel">
+                        <p class="mb-3">
+                            Да, домашние задания будут. <br>
+                            Никто не поставит вам 2 и не вызовет родителей, если вы их не
+                            сделаете. Но в ваших интересах делать. Тем самым вы углубите свои знания, научите применять
+                            их на практике и повысите свою ценность, как специалиста!<br>
+                            Для выполнения домашних заданий будет необходимо подготовить домашний компьютер. Подробная
+                            инструкция будет выслана вам по почте перед первым занятием.
+                        </p>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <a data-toggle="collapse" data-parent="#rightFaq" href="#rightFaq2"
+                       aria-expanded="false" aria-controls="rightFaq2">
+                        <i class="fa fa-question-circle-o text-secondary mr-2" aria-hidden="true"></i> Сколько человек будет со мной в группе?
+                    </a>
+                    <div id="rightFaq2" class="collapse mt-2" role="tabpanel">
+                        <p class="mb-3">
+                            В группах будет до 10 человек.
+                        </p>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <a data-toggle="collapse" data-parent="#rightFaq" href="#rightFaq3"
+                       aria-expanded="false" aria-controls="rightFaq3">
+                        <i class="fa fa-question-circle-o text-secondary mr-2" aria-hidden="true"></i> Что ожидает меня в конце курса?
+                    </a>
+                    <div id="rightFaq3" class="collapse mt-2" role="tabpanel">
+                        <p class="mb-3">
+                            В конце курса вы должны будете сделать небольшой проект, используя полученные знания, и
+                            получите сертификат об окончании курса. Ваш проект будет в открытом доступе и его демонстрация
+                            является очень весомым аргументом при собеседовании в любую IT-компанию в будущем.<br>
+                            Также вы сможете самостоятельно подготовиться и сдать экзамены на сертификаты международных
+                            образцов от Oracle или W3Schools.
+                        </p>
+                    </div>
+                </div>
+                <div class="item my-2">
+                    <a data-toggle="collapse" data-parent="#rightFaq" href="#rightFaq4"
+                       aria-expanded="false" aria-controls="rightFaq4">
+                        <i class="fa fa-question-circle-o text-secondary mr-2" aria-hidden="true"></i> Есть ли парковка для машины?
+                    </a>
+                    <div id="rightFaq4" class="collapse mt-2" role="tabpanel">
+                        <p class="mb-3">
+                            Да, бесплатная парковка есть во внутреннем дворе здания.
+                        </p>
+                    </div>
+                </div>
 
+            </div>
+        </div>
     </div>
 </div>
 @@include('./partials/footer.html')

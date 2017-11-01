@@ -1,5 +1,11 @@
-$green:   #7ACD19;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+$green: #58cd20;
+$gray-800: #343a40 !default;
 
 $theme-colors: (
   "primary": $green
-)
+);
+
+$body-color: $gray-800;
+$font-family-base: 'Roboto', sans-serif;

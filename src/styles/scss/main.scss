@@ -27,11 +27,13 @@
 
 .background-img-2 {
   position: absolute;
-  background-image: url("../images/pc7.jpg");
+  background-image: url("../images/pc2.jpg");
   background-size: cover;
   z-index: -1;
   width: 100%;
-  min-height: 35rem;
+  height: 100%;
+  left: 0;
+  top: 0;
 
   &:before {
     content: '';
@@ -39,7 +41,7 @@
     background-image: linear-gradient(to bottom left,#737373 31%,#8c4605);
     opacity: .7;
     width: 100%;
-    min-height: 35rem;
+    height: 100%;
   }
 }
 
@@ -61,4 +63,14 @@
 #map {
   width: 100%;
   height: 25rem;
+}
+
+.course-card {
+  border: solid 1px rgba($white, 0.3);
+  transition: border 300ms, box-shadow 300ms;
+
+  &:hover {
+    border: solid 1px rgba($white, 0.6);
+    box-shadow: 5px 5px 20px $gray-900;
+  }
 }

@@ -11,7 +11,9 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     gprint = require('gulp-print'),
     del = require('del'),
-    fileinclude = require('gulp-file-include');
+    fileinclude = require('gulp-file-include'),
+    ftp = require('vinyl-ftp'),
+    config = require('./config.js');
 
 // Styles
 gulp.task('styles', function () {
@@ -52,14 +54,44 @@ gulp.task('html', function() {
         .pipe(gulp.dest('dist/'));
 });
 
+// Favicon
+gulp.task('favicon', function() {
+    return gulp.src('src/*.{png,ico,json,xml}')
+        .pipe(gulp.dest('dist/'));
+});
+
 // Clean
 gulp.task('clean', function () {
     return del(['dist']);
 });
 
+// Deploy
+gulp.task( 'deploy', function () {
+
+    var conn = ftp.create( {
+        host:     config.config.host,
+        user:     config.config.user,
+        password: config.config.password,
+        parallel: 10
+    } );
+
+    var globs = [
+        'dist/**/*'
+    ];
+
+    // using base = '.' will transfer everything to /public_html correctly
+    // turn off buffering in gulp.src for best performance
+
+    return gulp.src( globs, { buffer: false } )
+        .pipe(gprint())
+        //.pipe( conn.newer( '/httpdocs' ) ) // only upload newer files
+        .pipe( conn.dest( '/httpdocs' ) );
+
+} );
+
 // Default task
 gulp.task('default', ['clean'], function () {
-    gulp.start('html', 'images', 'styles', 'scripts');
+    gulp.start('html', 'favicon', 'images', 'styles', 'scripts');
 });
 
 // Watch

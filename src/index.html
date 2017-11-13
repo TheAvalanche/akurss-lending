@@ -7,13 +7,16 @@
 </head>
 <body>
 @@include('./partials/nav.html')
-<div class="hero-img"></div>
-<div class="container">
-    <div class="row my-5 py-5">
-        <div class="col-12 col-md-6">
-            <div class="hero-header text-light">
-                <h1 class="display-4">Обучение программированию за 2.5 месяца!</h1>
-                <p class="lead">Просто и доступно!</p>
+<div class="container-fluid position-relative">
+    <div class="hero-img"></div>
+    <div class="container py-5">
+        <div class="row py-5 align-items-center">
+            <div class="col-12 col-md-6">
+                <div class="hero-header text-light">
+                    <h1 class="display-4">Обучение программированию за 2.5 месяца!</h1>
+                    <p class="lead">Просто и доступно!</p>
+                </div>
+                <button class="btn btn-info btn-lg btn-block mt-5" id="toRegisterTop">Записаться!</button>
             </div>
         </div>
     </div>
@@ -47,7 +50,7 @@
     </div>
 </div>
 
-<div class="container-fluid position-relative">
+<div class="container-fluid position-relative" id="programs">
     <div class="background-img-2"></div>
     <div class="container py-2">
         <div class="row my-5">
@@ -132,7 +135,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center mt-3">
-                <p class="text-light lead"><b>Не знаешь, что выбрать?</b> Звони: <a href="tel:+37128272988">+371 28 279 288</a></p>
+                <p class="text-light lead"><b>Не знаешь, что выбрать?</b> Звони: <a href="tel:+37128272988">+371 28 272 988</a></p>
             </div>
         </div>
     </div>
@@ -145,22 +148,46 @@
             </div>
         </div>
         <div class="row my-5">
-            <div class="col-12 col-md-4 text-center">
-                <img src="images/icons/png/blackboard_green.png" class="img-fluid" style="max-width:150px;">
-                <h5 class="py-3">Гибкая программа</h5>
-                <p class="px-3">Желаете обучаться с нуля? Или уже есть определённые знания? Мы уделим внимание
-                    каждому!</p>
+            <div class="col-12 col-md-6 my-3 pr-4">
+                <h5><i class="fa fa-question-circle-o mr-2" aria-hidden="true"></i>  Как часто проходят занятия и сколько длится курс?</h5>
+                <p class="text-muted">Курс состоит из 11 занятий и занятия проходят один раз в неделю. Длительность каждого занятия - 3 часа.</p>
             </div>
-            <div class="col-12 col-md-4 text-center">
-                <img src="images/icons/png/books_green.png" class="img-fluid" style="max-width: 150px;">
-                <h5 class="py-3">Современные технологии</h5>
-                <p class="px-3">Мы обучаем только самым востребованным технологиям на сегодняшний день!</p>
+            <div class="col-12 col-md-6 my-3 pr-4">
+                <h5><i class="fa fa-question-circle-o mr-2" aria-hidden="true"></i> Нужен ли с собой компьютер?</h5>
+                <p class="text-muted">Вы можете приносить свой привычный ноутбук и работать на нем, либо можете смело пользоваться
+                    нашими ноутбуками для работы в классе. Выбор за вами!</p>
             </div>
-            <div class="col-12 col-md-4 text-center">
-                <img src="images/icons/png/student-1_green.png" class="img-fluid" style="max-width: 150px;">
-                <h5 class="py-3">Опытные проподаватели</h5>
-                <p class="px-3">Никаких "теоретиков"! Вас будут обучать исключительно люди с многолетним опытом в
-                    IT.</p>
+            <div class="col-12 col-md-6 my-3 pr-4">
+                <h5><i class="fa fa-question-circle-o mr-2" aria-hidden="true"></i> Сколько стоят занятия и как оплачивать?</h5>
+                <p class="text-muted">Первое занятие абсолютно <b>бесплатно</b>!<br> Полная стоимость курса - 150€ (15€ за занятие).
+                    Оплата производится через интернет-банк.</p>
+            </div>
+            <div class="col-12 col-md-6 my-3 pr-4">
+                <h5><i class="fa fa-question-circle-o mr-2" aria-hidden="true"></i> Что, если я пропущу какое-то занятие?</h5>
+                <p class="text-muted">Для начала можно поплакать - ведь вы пропустили целых 3 часа занимательной информации в
+                    приятной и веселой компании! :) <br>
+                    Но не отчаивайтесь, в любом случае вы получите все материалы
+                    и помощь в освоении темы самостоятельно.</p>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-12 text-center">
+                <p class="text-primary lead"><b>Не нашёл ответ на свой вопрос?</b> <a href="faq.html">Смотри здесь!</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid position-relative">
+    <div class="background-img-2"></div>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="text-light">Запишитесь на бесплатный урок!</h3>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <button class="btn btn-info btn-lg" id="toRegisterBottom">Записаться!</button>
             </div>
         </div>
     </div>
